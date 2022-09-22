@@ -1,0 +1,5 @@
+For problem two we used semaphores. We created semaphores for each zone and then created an enum for each part of the stage. We then get all the possible combinations of the big plane zones and little plane zones 
+put them into an array.We then run a while loop which repeats foreever and in this while loop we have a switch statement for all the stages. For idle we just have the plane wait the amount of time it needs to.
+Then for Waiting for takeoff we have it figure out which zones it needs to go into and then we wait on those zones to open up. We then have someprint statepments for when the plane takesoff. After takeoff it goes into
+the fly state where it just waits again. It then waits for a runway to open up and here it switches to the waiting for landing phase where it is similair to the the waiting for takeoff phase. Once a runway opens
+up the plane lands and then takes the time it needs to land. This is done for all the threads in in the main function and then the threads are joined together. 
