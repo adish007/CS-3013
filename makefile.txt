@@ -1,0 +1,3 @@
+hellomake: OmniSportsPark.c problem2_CS3031.c
+	gcc -o OmniSportsPark OmniSportsPark.c -I.
+	gcc -o problem2_CS3031 problem2_CS3031.c -I.
